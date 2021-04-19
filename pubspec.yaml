@@ -1,0 +1,49 @@
+name: bmusic
+description: Music Player
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  music_player: ^0.1.4
+  flutter_audio_query: ^0.3.2
+  flutter_launcher_icons: ^0.7.3
+  sqflite: ^1.2.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "res/bmusic.png"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - res/lady.jpeg
+    - res/album.png
+    - res/vynil.png
+    - res/singer.png
+    - res/musical_note.png
+    - res/bmusic.png
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: res/Roboto-Light.ttf
+        - asset: res/Roboto-LightItalic.ttf
+          style: italic
+
+    - family:  outline_material_icons
+      fonts:
+        - asset: res/outline_material_icons.ttf
