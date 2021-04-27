@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent, // transparent status bar
+    statusBarColor: kPrimaryColor, // transparent status bar
     systemNavigationBarColor: Colors.transparent,
   ));
   runApp(MyApp());
@@ -22,9 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: theme(),
       darkTheme: themeDark(),
-      home: HomePage(
-
-      ),
+      home: HomePage(),
     );
   }
 }

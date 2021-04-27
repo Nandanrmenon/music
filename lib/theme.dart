@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'constants.dart';
 
 ThemeData theme() {
   return ThemeData(
-    primarySwatch: Colors.blue,
+    primarySwatch: Colors.yellow,
     primaryColor: kPrimaryColor,
     accentColor: kAccentColor,
     appBarTheme: AppBarTheme(
-      color: Colors.white,
-      elevation: 0,
-      iconTheme: IconThemeData(color: Colors.black),
+      color: kPrimaryColor,
+      elevation: 2,
+      iconTheme: IconThemeData(color: Colors.white),
       textTheme:
-      TextTheme(headline6: TextStyle(fontSize: 20.0, color: Colors.black)),
+      TextTheme(headline6: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.w600)),
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
         backgroundColor: kPrimaryColor,
@@ -21,19 +22,24 @@ ThemeData theme() {
     visualDensity: VisualDensity.adaptivePlatformDensity,
     scaffoldBackgroundColor: Colors.white,
     dividerColor: Colors.black,
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      selectedItemColor: kPrimaryColor,
+      backgroundColor: Colors.white
+    ),
   );
 }
 
 ThemeData themeDark() {
+
   return ThemeData(
     brightness: Brightness.dark,
     accentColor: kAccentColor,
     appBarTheme: AppBarTheme(
-      color: Colors.transparent,
-      elevation: 0,
+      color: kPrimaryColor,
+      elevation: 2,
       iconTheme: IconThemeData(color: Colors.white),
       textTheme:
-      TextTheme(headline6: TextStyle(fontSize: 20.0, color: Colors.white)),
+      TextTheme(headline6: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.w600)),
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
         backgroundColor: kPrimaryColor,
@@ -41,5 +47,8 @@ ThemeData themeDark() {
     ),
     dividerColor: Colors.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      selectedItemColor: kPrimaryColor,
+    ),
   );
 }
